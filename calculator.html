@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="page_wrapper">
+        <div class="calculator_wrapr">
+            <div id="result_div" class="result_div wdth100" resize="none"></div>
+            <div class="cal_div wdth100">
+                <ul class="cal_btns wdth100">
+                    <li><a onclick="clearScreen();" class="op_btns" href="javascript:void(0);">C</a></li>
+                    <li><a class="op_btns" href="javascript:void(0);">+/-</a></li>
+                    <li><a class="op_btns" href="javascript:void(0);">%</a></li>
+                    <li><a  onclick="getFirstInput();" class="op_btns" href="javascript:void(0);">/</a></li>
+                    <li><a onclick="getNumber()" href="javascript:void(0);">7</a></li>
+                    <li><a onclick="getNumber()" href="javascript:void(0);">8</a></li>
+                    <li><a onclick="getNumber()" href="javascript:void(0);">9</a></li>
+                    <li><a class="op_btns" onclick="getFirstInput();" href="javascript:void(0);">x</a></li>
+                    <li><a onclick="getNumber()" href="javascript:void(0);">4</a></li>
+                    <li><a onclick="getNumber()" href="javascript:void(0);">5</a></li>
+                    <li><a onclick="getNumber()" href="javascript:void(0);">6</a></li>
+                    <li><a  class="op_btns" onclick="getFirstInput();" href="javascript:void(0);">-</a></li>
+                    <li><a onclick="getNumber()" href="javascript:void(0);">1</a></li>
+                    <li><a onclick="getNumber()" href="javascript:void(0);">2</a></li>
+                    <li><a onclick="getNumber()" href="javascript:void(0);">3</a></li>
+                    <li><a onclick="getFirstInput()" class="op_btns" href="javascript:void(0);">+</a></li>
+                    <li><a onclick="getNumber()" href="javascript:void(0);">00</a></li>
+                    <li><a onclick="getNumber()" href="javascript:void(0);">0</a></li>
+                    <li><a href="javascript:void(0);">,</a></li>
+                    <li><a onclick="getSecondInput();" class="green_bg op_btns" href="javascript:void(0);">=</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./calculator.js" async defer></script>
+</body>
+
+</html>
